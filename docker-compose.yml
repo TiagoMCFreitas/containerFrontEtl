@@ -1,0 +1,12 @@
+networks:
+  etlmongodb:
+    name: etlmongodb
+    external: true
+services:
+  frontend:
+    image: etlmongodb-frontend:v1
+    restart: always
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks:
+      - etlmongodb
