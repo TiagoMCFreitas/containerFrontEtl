@@ -8,5 +8,5 @@ echo "FRONT ETL"
 git clone git@github.com:tiagoKurt/Front-ETL.git servicos/frontend
 cd servicos/frontend
 bash buildImages.sh $version
-rm -rf frontend
 cd ../..
+rm -rf servicos
